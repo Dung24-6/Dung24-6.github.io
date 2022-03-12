@@ -1,51 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <title>Dung website</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" />
-</head>
-
-<body>
-  <!-- Phan mo dau -->
-  <nav class="navbar">
-    <div class="navbar_container">
-      <a href="#home" id="navbar_logo">Dung website</a>
-      <div class="navbar_toggle" id="menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dung website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">Dũng HVQ</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Trang chủ</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">Giới thiệu</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Kỉ niệm</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Kết nối</a>
+          </li>
+        </ul>
       </div>
-      <ul class="navbar_menu">
-        <li class="navbar_item">
-          <a href="#home" class="navbar_link" id="home">Home</a>
-        </li>
-        <li class="navbar_item">
-          <a href="#about" class="navbar_link" id="about">About Me</a>
-        </li>
-        <li class="navbar_item">
-          <a href="#services" class="navbar_link" id="services">Contact</a>
-        </li>
-        <li class="navbar_signup">
-          <a href="#signup" class="button" id="signup">Story</a>
-        </li>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Trang web <span>giới thiệu</span></h1>
+        <p class="hero__description">về bản thân  </p>
+        <button class="main__btn"><a href="#">Xem thêm</a></button>
+      </div>
     </div>
-  </nav>
 
-  <!-- Phan 2-->
-  <div class="choose" id="#home">
-    <div class="choose_container">
-      <h1 class="choose_heading">Choose your <span>color</span></h1>
-      <p class="choose_description">Hello</p>
-      <button class="main_button"><a href="#home">Buy something</a></button>
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-user fa-10x"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>Hà Văn Quốc Dũng</h1>
+          <h2>I'm a funny guy</h2>
+          <p>Ước mơ của tôi là trở thành một lập trình viên giỏi </p>
+          <button class="main__btn"><a href="#">Xem thêm</a></button>
+        </div>
+      </div>
     </div>
-  </div>
 
+   
 
-</body>
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Kỉ niệm</h1>
+          <h2>Những kỉ niệm đẹp</h2>
+          <p>cùng những người tôi yêu quý</p>
+          <button class="main__btn"><a href="#">Xem thêm</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-user fa-10x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    
+
+    <script src="app.js"></script>
+  </body>
 </html>
