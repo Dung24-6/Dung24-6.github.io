@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dung website</title>
+    <title>Dung Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -18,7 +18,8 @@
       <div class="navbar__container">
         <a href="#home" id="navbar__logo">Dũng HVQ</a>
         <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
           <span class="bar"></span>
         </div>
         <ul class="navbar__menu">
@@ -29,12 +30,10 @@
             <a href="#about" class="navbar__links" id="about-page">Giới thiệu</a>
           </li>
           <li class="navbar__item">
-            <a href="#services" class="navbar__links" id="services-page"
-              >Kỉ niệm</a
-            >
+            <a href="#projects" class="navbar__links" id="projects-page">Dự án</a>
           </li>
           <li class="navbar__btn">
-            <a href="#sign-up" class="button" id="signup">Kết nối</a>
+            <a href="#contact" class="button" id="contact-page">Liên hệ</a>
           </li>
         </ul>
       </div>
@@ -43,47 +42,73 @@
     <!-- Hero Section -->
     <div class="hero" id="home">
       <div class="hero__container">
-        <h1 class="hero__heading">Trang web <span>giới thiệu</span></h1>
-        <p class="hero__description">về bản thân  </p>
-        <button class="main__btn"><a href="#">Xem thêm</a></button>
+        <h1 class="hero__heading">Portfolio của <span>Dũng HVQ</span></h1>
+        <p class="hero__description">
+          Lập trình viên Fullstack - JavaScript, Node.js &amp; React
+        </p>
+        <button class="main__btn">
+          <a href="#projects">Xem dự án</a>
+        </button>
       </div>
     </div>
 
     <!-- About Section -->
-    <div class="main" id="about">
+    <section class="main" id="about">
       <div class="main__container">
         <div class="main__img--container">
-          <div class="main__img--card"><i class="fas fa-user fa-10x"></i></div>
+          <div class="main__img--card">
+            <i class="fas fa-code fa-10x"></i>
+          </div>
         </div>
         <div class="main__content">
           <h1>Hà Văn Quốc Dũng</h1>
-          <h2>I'm a funny guy</h2>
-          <p>Ước mơ của tôi là trở thành một lập trình viên giỏi </p>
-          <button class="main__btn"><a href="#">Xem thêm</a></button>
+          <h2>Lập trình viên Fullstack</h2>
+          <p>
+            Tôi là một lập trình viên đam mê phát triển các ứng dụng web hiện đại sử dụng các công nghệ như JavaScript, Node.js và React. Tôi luôn nỗ lực học hỏi và sáng tạo trong mỗi dự án.
+          </p>
+          <button class="main__btn">
+            <a href="#contact">Liên hệ</a>
+          </button>
         </div>
       </div>
-    </div>
+    </section>
 
-   
-
-    <!-- Features Section -->
-    <div class="main" id="sign-up">
+    <!-- Projects Section -->
+    <section class="main" id="projects">
       <div class="main__container">
         <div class="main__content">
-          <h1>Kỉ niệm</h1>
-          <h2>Những kỉ niệm đẹp</h2>
-          <p>cùng những người tôi yêu quý</p>
-          <button class="main__btn"><a href="#">Xem thêm</a></button>
+          <h1>Dự án tiêu biểu</h1>
+          <h2>Những sản phẩm mà tôi đã phát triển</h2>
+          <p>
+            Khám phá các dự án lập trình của tôi, từ ứng dụng web đến các dự án cá nhân và nhóm.
+          </p>
+          <button class="main__btn">
+            <a href="https://github.com/Dung24-6" target="_blank">Xem thêm trên GitHub</a>
+          </button>
         </div>
         <div class="main__img--container">
           <div class="main__img--card" id="card-2">
-            <i class="fas fa-user fa-10x"></i>
+            <i class="fas fa-laptop-code fa-10x"></i>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    
+    <!-- Contact Section -->
+    <section class="main" id="contact">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Liên hệ</h1>
+          <h2>Kết nối với tôi</h2>
+          <p>
+            Nếu bạn có dự án thú vị hay cần trao đổi, hãy liên hệ qua email hoặc GitHub.
+          </p>
+          <button class="main__btn">
+            <a href="mailto:hadung24062002@gmail.com">Gửi Email</a>
+          </button>
+        </div>
+      </div>
+    </section>
 
     <script src="app.js"></script>
   </body>
